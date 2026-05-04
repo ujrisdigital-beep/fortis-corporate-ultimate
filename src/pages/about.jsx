@@ -13,20 +13,20 @@ export default function About() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold">FORTIS INVICTA</div>
-            <div className="space-x-6">
-              <Link href="/" className="hover:text-gold">Home</Link>
-              <Link href="/about" className="text-gold">About</Link>
-              <Link href="/services" className="hover:text-gold">Services</Link>
-              <Link href="/contact" className="hover:text-gold">Contact</Link>
-            </div>
+            <div className="space-x-4 sm:space-x-6 flex flex-wrap gap-2 sm:gap-0">
+               <Link href="/" className="hover:text-gold">Home</Link>
+               <Link href="/about" className="text-gold">About</Link>
+               <Link href="/services" className="hover:text-gold">Services</Link>
+               <Link href="/contact" className="hover:text-gold">Contact</Link>
+             </div>
           </div>
         </nav>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-4xl font-bold text-navy mb-8">About FORTIS INVICTA LTD</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-8">About FORTIS INVICTA LTD</h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
           <div>
             <h2 className="text-2xl font-semibold text-navy mb-4">Our Mission</h2>
             <p className="text-gray-700 leading-relaxed">

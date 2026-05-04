@@ -8,22 +8,22 @@ export default function Home() {
       <Head>
         <title>FORTIS INVICTA LTD - Powering The Gambia's Future</title>
         <meta name="description" content="FORTIS INVICTA LTD delivers transformative infrastructure, renewable energy, and circular economy solutions for The Gambia." />
-        <link rel="icon" href="/FORTIS_3D_LOGO_2.jpeg" />
+        <link rel="icon" href="/fortis-3d-logo.jpeg" />
       </Head>
 
       <header className="bg-navy text-white">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold">FORTIS INVICTA</div>
-            <div className="space-x-6">
-              <Link href="/" className="text-gold">Home</Link>
-              <Link href="/about" className="hover:text-gold">About</Link>
-              <Link href="/projects" className="hover:text-gold">Projects</Link>
-              <Link href="/gallery" className="hover:text-gold">Gallery</Link>
-              <Link href="/blog" className="hover:text-gold">News</Link>
-              <Link href="/contact" className="hover:text-gold">Contact</Link>
-              <Link href="/admin" className="bg-gold text-navy px-4 py-2 rounded font-semibold">Admin</Link>
-            </div>
+            <div className="space-x-4 sm:space-x-6 flex flex-wrap gap-2 sm:gap-0">
+               <Link href="/" className="text-gold">Home</Link>
+               <Link href="/about" className="hover:text-gold">About</Link>
+               <Link href="/projects" className="hover:text-gold">Projects</Link>
+               <Link href="/gallery" className="hover:text-gold">Gallery</Link>
+               <Link href="/blog" className="hover:text-gold">News</Link>
+               <Link href="/contact" className="hover:text-gold">Contact</Link>
+               <Link href="/admin" className="bg-gold text-navy px-4 py-2 rounded font-semibold text-sm">Admin</Link>
+             </div>
           </div>
         </nav>
       </header>
@@ -31,26 +31,26 @@ export default function Home() {
       <main>
         <section className="relative bg-navy text-white py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-bold mb-6">Powering The Gambia's Future</h1>
-            <p className="text-xl mb-8 max-w-3xl mx-auto">
+             <h1 className="text-3xl sm:text-5xl font-bold mb-6">Powering The Gambia's Future</h1>
+             <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
               FORTIS INVICTA LTD delivers transformative infrastructure, renewable energy, 
               and circular economy solutions that drive sustainable development across The Gambia.
             </p>
-            <div className="space-x-4">
-              <Link href="/projects" className="bg-gold text-navy px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400">
-                View Our Projects
-              </Link>
-              <Link href="/contact" className="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy">
-                Get In Touch
-              </Link>
-            </div>
+             <div className="space-x-4 sm:space-x-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
+               <Link href="/projects" className="bg-gold text-navy px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 inline-block text-center">
+                 View Our Projects
+               </Link>
+               <Link href="/contact" className="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy inline-block text-center">
+                 Get In Touch
+               </Link>
+             </div>
           </div>
         </section>
 
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-navy">Our Core Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { title: 'Renewable Energy', desc: 'Solar installations and clean energy solutions powering communities across The Gambia.', icon: '☀️' },
                 { title: 'Infrastructure', desc: 'Road networks, bridges, and critical infrastructure for sustainable development.', icon: '🏗️' },
@@ -87,7 +87,7 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-navy">Additional Solutions</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Circular Economy Hub', link: '/circular-economy', desc: 'Transform agro-waste into biogas, biochar, and protein.' },
                 { title: 'Smart Agriculture', link: '/smart-agriculture', desc: 'Regenerative farming, OMF, cover crops for food security.' },

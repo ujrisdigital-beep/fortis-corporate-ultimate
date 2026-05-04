@@ -40,9 +40,9 @@ export default function Contact() {
 
       <header className="bg-navy text-white">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-wrap gap-4">
             <div className="text-2xl font-bold">FORTIS INVICTA</div>
-            <div className="space-x-6">
+            <div className="space-x-4 sm:space-x-6 flex flex-wrap gap-2 sm:gap-0">
               <Link href="/" className="hover:text-gold">Home</Link>
               <Link href="/about" className="hover:text-gold">About</Link>
               <Link href="/services" className="hover:text-gold">Services</Link>
@@ -53,7 +53,7 @@ export default function Contact() {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-4xl font-bold text-navy mb-8">Contact Us</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-8">Contact Us</h1>
         
         {status.message && (
           <div className={`p-4 rounded mb-6 ${
@@ -64,7 +64,7 @@ export default function Contact() {
             {status.message}
           </div>
         )}
-
+        
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
@@ -76,7 +76,7 @@ export default function Contact() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
             />
           </div>
-
+          
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Email (Primary ID)</label>
             <input
@@ -88,7 +88,7 @@ export default function Contact() {
               placeholder="Business email only (no temp emails)"
             />
           </div>
-
+          
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
             <input
@@ -99,7 +99,7 @@ export default function Contact() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
             />
           </div>
-
+          
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
             <textarea
@@ -110,7 +110,7 @@ export default function Contact() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
             />
           </div>
-
+          
           <button
             type="submit"
             className="w-full bg-navy text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors"

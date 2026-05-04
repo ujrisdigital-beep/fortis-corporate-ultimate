@@ -46,12 +46,12 @@ export default function Services() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold">FORTIS INVICTA</div>
-            <div className="space-x-6">
-              <Link href="/" className="hover:text-gold">Home</Link>
-              <Link href="/about" className="hover:text-gold">About</Link>
-              <Link href="/services" className="text-gold">Services</Link>
-              <Link href="/contact" className="hover:text-gold">Contact</Link>
-            </div>
+            <div className="space-x-4 sm:space-x-6 flex flex-wrap gap-2 sm:gap-0">
+               <Link href="/" className="hover:text-gold">Home</Link>
+               <Link href="/about" className="hover:text-gold">About</Link>
+               <Link href="/services" className="text-gold">Services</Link>
+               <Link href="/contact" className="hover:text-gold">Contact</Link>
+             </div>
           </div>
         </nav>
       </header>

@@ -58,7 +58,7 @@ export default function Projects() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold">FORTIS INVICTA</div>
-            <div className="space-x-6">
+            <div className="space-x-4 sm:space-x-6 flex flex-wrap gap-2 sm:gap-0">
               <Link href="/" className="hover:text-gold">Home</Link>
               <Link href="/about" className="hover:text-gold">About</Link>
               <Link href="/projects" className="text-gold">Projects</Link>
@@ -69,8 +69,8 @@ export default function Projects() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-4xl font-bold text-navy mb-4 text-center">Our Projects</h1>
-        <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-bold text-navy mb-4 text-center">Our Projects</h1>
+        <p className="text-lg sm:text-xl text-gray-600 text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
           Transforming The Gambia through innovative infrastructure and sustainable development
         </p>
 

@@ -3,5 +3,5 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "domains": ["fortisinvicta.com"]
+  "domains": ["fortisinvicta.com", "fortisos.cloud"]
 }
