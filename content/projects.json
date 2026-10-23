@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "slug": "food-preservation",
+      "title": "Food & agro-processing",
+      "category": "Food security",
+      "stage": "In development",
+      "summary": "Preserving more of the harvest and creating useful local food products.",
+      "description": "We are exploring dehydration and appropriate processing of seasonal agricultural produce to extend shelf life, add value and support local supply. Product selection and equipment choices will be guided by customer demand, food safety requirements and viable operating costs.",
+      "nextStep": "Validate priority products, seasonal supply, processing requirements and customer demand.",
+      "needs": "Produce suppliers, processing expertise, distribution partners and pilot support.",
+      "status": "published",
+      "lastReviewed": "2026-10-23"
+    },
+    {
+      "slug": "bsf-pilot",
+      "title": "Circular bioeconomy & BSF pilot",
+      "category": "Resource recovery",
+      "stage": "Pilot preparation",
+      "summary": "A proposed trials and training hub to turn suitable wet organic residues into useful resources.",
+      "description": "The proposed black soldier fly pilot will test repeatable production under Gambian conditions. Locally appropriate infrastructure, monitored environmental control, feedstock preparation and essential backup power will be assessed before scale-up. Biochar and briquetting are complementary development areas with their own suitable feedstocks and process requirements. Technical discussions and mentoring do not constitute a confirmed funding partnership.",
+      "nextStep": "Agree a bounded technical review, reconcile equipment and infrastructure costs, and develop the funding plan.",
+      "needs": "Technical review, traceable feedstock suppliers, research collaborators and pilot financing.",
+      "status": "published",
+      "lastReviewed": "2026-10-23"
+    },
+    {
+      "slug": "energy-buildings",
+      "title": "Energy & sustainable buildings",
+      "category": "Resilient infrastructure",
+      "stage": "In development",
+      "summary": "Affordable solar solutions, passive building design and local construction materials.",
+      "description": "Our development scope includes solar energy, compressed earth blocks and energy-efficient construction. The longer-term ambition is affordable net-zero-energy housing. Performance and cost claims will be established through appropriate design, demonstration and measurement.",
+      "nextStep": "Define a practical demonstration scope and verify local sourcing, costs and technical requirements.",
+      "needs": "Qualified designers, local fabricators, demonstration sites and implementation partners.",
+      "status": "published",
+      "lastReviewed": "2026-10-23"
+    },
+    {
+      "slug": "fortisos",
+      "title": "Digital systems & FortiSOS",
+      "category": "Digital access",
+      "stage": "Platform development",
+      "summary": "Practical digital tools to improve visibility, coordination and access to opportunities.",
+      "description": "FortiSOS forms part of our ambition to close the digitisation gap in The Gambia. We are developing digital approaches that help businesses and stakeholders organise information and identify collaboration opportunities. Platform availability and individual features should be checked directly through FortiSOS.",
+      "nextStep": "Validate priority user needs, test usability and refine the platform around practical workflows.",
+      "needs": "Pilot users, business collaborators and digital implementation expertise.",
+      "status": "published",
+      "lastReviewed": "2026-10-23"
+    }
+  ]
+}

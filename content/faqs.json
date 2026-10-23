@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "slug": "what-fortis-does",
+      "title": "What does Fortis Invicta do?",
+      "answer": "Fortis Invicta Ltd develops practical approaches to food preservation, agricultural waste recovery, affordable energy, sustainable buildings and digital access in The Gambia. Individual projects are at different stages of preparation.",
+      "status": "published"
+    },
+    {
+      "slug": "bsf-stage",
+      "title": "Is the BSF pilot already operating commercially?",
+      "answer": "The proposed BSF trials and training hub is in pilot preparation. Technical review, infrastructure costs, feedstock requirements and financing need to be agreed before implementation and scale-up.",
+      "status": "published"
+    },
+    {
+      "slug": "partnerships",
+      "title": "How can an organisation work with Fortis?",
+      "answer": "Contact Fortis with your area of interest and a specific contribution, such as suitable feedstocks, fabrication, research, technical expertise, premises, distribution or pilot support. No investment or partnership commitment is implied until agreed.",
+      "status": "published"
+    },
+    {
+      "slug": "funding",
+      "title": "Is project funding confirmed?",
+      "answer": "Development to date has relied on the CEO\u2019s personal equity. External funding routes are being explored; this website does not announce a confirmed grant, partner investment or co-funding commitment.",
+      "status": "published"
+    },
+    {
+      "slug": "documents",
+      "title": "Where can I find project documents and event photographs?",
+      "answer": "Approved public briefs are listed in Documents. Published updates and event albums appear in News & gallery. Contact Fortis if the material you need has not yet been published.",
+      "status": "published"
+    }
+  ]
+}
