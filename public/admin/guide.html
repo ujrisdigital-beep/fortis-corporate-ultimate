@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fortis editor guide</title><link rel="stylesheet" href="/admin/editor.css"><main><h1>Fortis content editor guide</h1><a href="/admin/">Back to editor</a><pre># Your Fortis publishing desk
+
+After the one-time connection, visit `https://YOUR-SITE/admin/` and sign in with GitHub. Bookmark the page. Do not share a password: each editor uses their own authorised account.
+
+## Update company text
+Choose Website settings → Company &amp; homepage. Edit the field and save/publish. Contact details are shared across public pages. Keep the WhatsApp number as international digits without `+` or spaces. Platform URLs must start with https://.
+
+## Add an event and photographs
+1. Open “Resize photos” in the editor&#x27;s top bar. Select photographs from your phone/computer. Download each prepared WebP. This is local processing and does not upload anything.
+2. Return to the editor. Open News &amp; photo albums and add an item to the list.
+3. Set the page address to a unique short identifier, e.g. `community-training-october-2026`. Avoid spaces and capitals. Do not change a published address without a redirect.
+4. Add the genuine title, event date, category, location and summary. Full update accepts plain text; separate paragraphs with an empty line.
+5. Keep Visibility = draft while preparing. Saving commits the draft to the private repository, but excludes it from public output.
+6. Upload a cover photo and enter its alternative text. Add photographs under Photographs; each needs an image, descriptive alternative text and an optional caption. Add list items to upload several photos; the small preparation tool supports selecting multiple source photos.
+7. Optional: enter the related project page address, e.g. `bsf-pilot`.
+8. When approved, set Visibility = published and save/publish. Wait for Netlify&#x27;s build to show Published, then open the public website. Homepage shows the newest three published updates.
+9. Check in a different browser or on a phone. This verifies shared publication, unlike browser-only storage.
+
+The editor has fields for reviewing text but no rendered preview pane. Drafts are not publicly previewable. This deliberately simple version uses visibility status and Git history rather than a separate reviewer approval workflow.
+
+## Add a document
+Open Public documents. Add title, unique page address, category, date, version, summary and the approved PDF. Set published only when approved. Optional related event address associates the download with that event. Do not upload editable Word files, internal budgets, account keys or confidential documents. Downloads are public to anyone with the URL.
+
+To replace a PDF, upload the new version, update its version/date and save. Do not assume replacing the link deletes copies downloaded earlier or retained in Git history.
+
+## Update a project
+Open Projects and edit its stage, description, next milestone and collaboration needs. Visibility and development stage are DIFFERENT: a published page can correctly describe a project in pilot preparation. Do not invent outputs, partnerships or funding commitments.
+
+## Unpublish or archive
+Set Visibility = draft or archived and save/publish. Wait for the rebuild. The page and media not referenced elsewhere disappear from the NEW generated output. Git history, older deployments, search caches and previously downloaded copies may retain material.
+
+## If a save/build fails
+Do not assume the website changed. Inspect Netlify&#x27;s latest build log. Common causes: duplicate/invalid page address, missing file, unsupported image type, image above 2 MB, PDF above 12 MB, or missing image description. Correct the entry and save again. The prior successful deploy remains the usable release.
+
+## Publication permissions
+Only publish photos you are entitled to share, with appropriate consent for identifiable people. Label concept images as illustrative. Confirm names, dates, locations and any partner references. Keep the GitHub repository private; draft material is still readable by its collaborators.
+
+## New search and discovery fields
+- Edit FAQs in the Questions &amp; answers collection. Keep answers short, factual and consistent with the current project stage. Draft or archived FAQs are not published.
+- The company review date and project last-reviewed dates must reflect an actual review, not a date changed solely to look fresh. Use a valid YYYY-MM-DD date.
+- For updates, the optional updated-on date should describe a substantive revision. The original publication date remains unchanged.
+- Search, company facts, RSS, sitemap and structured data regenerate automatically on a successful build. Do not edit dist output directly.
+- Sector artwork is illustrative. Replace it only with approved, accurately captioned imagery; avoid suggesting an operating facility where one has not been built.
+</pre></main></html>
