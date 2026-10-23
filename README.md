@@ -1,54 +1,41 @@
-# FORTIS INVICTA LTD - Corporate Website
+# Fortis Invicta — public website
 
-A Next.js corporate website for FORTIS INVICTA LTD, featuring:
+A simple, dependency-free static website for fortisinvicta.com. Separate from the internal operations ecosystem.
 
-- Responsive design for mobile and desktop
-- Multiple pages: Home, About, Services, Projects, Gallery, Blog, Contact
-- Resources section with dynamic routing
-- Subscription plans page
-- Supabase integration for contact form
-- Security features with email validation
+## Start here
+- For a quick visual deployment: upload the CONTENTS of the included `dist` folder to Netlify. `index.html` must be at the upload root. No compilation or environment keys are required to browse the website.
+- For ongoing editing: connect the SOURCE to a private GitHub repository and deploy that repository through Netlify. A drag-and-drop-only deployment cannot publish CMS changes automatically.
+- Read `docs/DEPLOYMENT.md` for the one-time CMS authentication setup and Netlify Forms checks.
+- Read `docs/EDITOR_GUIDE.md` for day-to-day updates.
+- See `docs/VERIFICATION.md` for tested behaviour and the remaining account-specific checks.
 
-## Deployment
-
-This project is configured for Vercel deployment with support for:
-- `fortisinvicta.com`
-- `fortisos.cloud`
-
-## Getting Started
-
-```bash
-npm install
+## Commands (Node 22 or newer)
+```
+npm run build
+npm test
 npm run dev
 ```
+No npm install is needed: there are no application/build dependencies. The separate Decap editor loads its pinned browser bundle from the official npm CDN. The public website does not depend on that bundle.
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+## Files
+- `content/site.json`: homepage/company/contact text.
+- `content/projects.json`: projects, status and next milestones.
+- `content/events.json`: news, events and photo albums.
+- `content/documents.json`: approved public PDF records.
+- `content/config.json`: GitHub repository, branch and primary site URL (no secrets).
+- `cms-schema.json`: form layout for the content editor.
+- `public/uploads/`: original approved editorial media. Only referenced published files enter the build.
+- `public/assets/`: website styles, small interaction script and supplied logo.
+- `scripts/build.mjs`: static page generation, escaping and publication checks.
+- `dist/`: generated, deployable output. Generated files are not the editing source.
 
-## Building for Production
+## Publishing and privacy
+Content marked `draft` or `archived` is excluded from generated pages. Unreferenced editorial uploads are also excluded. Repository collaborators can still read ALL source content and uploaded files, including drafts: keep the repository private and never put sensitive internal documents in it. Published files are public and downloadable.
 
-```bash
-npm run build
-npm start
-```
+This is a public website, not a document vault, CRM, staff portal or security-certified application. No Firebase project, shared administrator password, private key, custom API or database is required.
 
-## Environment Variables
+## Provenance
+Rebuilt from the supplied `fortis-invicta-ltd.zip` and your supplied Fortis 3D logo. The original upload is unchanged. Existing sector intent and public contact details were retained; custom Express administration, local-file persistence, simulated inbox, sample PDFs, unsupported metrics and unrelated features were removed. The supplied logo has been resized/encoded without redesigning it.
 
-Create a `.env.local` file with:
-
-```
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-## Project Structure
-
-```
-src/
-  pages/          # Next.js pages
-    resources/     # Dynamic resource pages
-      [slug].jsx   # Dynamic route for resources like /resources/nawec
-  components/      # Reusable components
-  lib/            # Utility functions and configurations
-  styles/         # Global styles
-public/           # Static assets
-```
+## Modern public website edition
+The redesign adds original sector illustrations, a responsive editorial homepage, local search, editable FAQs, public company facts, social cards, RSS and structured metadata without extra runtime dependencies. See docs/BENCHMARK_AND_DESIGN.md and docs/SEO_AND_DISCOVERABILITY.md for decisions, references and indexing setup. The public site remains separate from the internal operations app.

@@ -1,0 +1,31 @@
+[build]
+ command = "npm run build"
+ publish = "dist"
+[build.environment]
+ NODE_VERSION = "22"
+[[redirects]]
+ from = "/gallery"
+ to = "/news/"
+ status = 301
+[[redirects]]
+ from = "/investors"
+ to = "/partnerships/"
+ status = 301
+[[redirects]]
+ from = "/investor-relations"
+ to = "/partnerships/"
+ status = 301
+[[redirects]]
+ from = "/what-we-do/*"
+ to = "/projects/"
+ status = 301
+[[redirects]]
+ from = "/sectors/*"
+ to = "/projects/"
+ status = 301
+[[redirects]]
+ from = "/privacy-policy"
+ to = "/privacy/"
+ status = 301
+
+# Security headers are maintained in public/_headers for both upload and Git deploys.

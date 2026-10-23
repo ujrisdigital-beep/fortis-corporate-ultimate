@@ -1,0 +1,475 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "YOUR-GITHUB-OWNER/YOUR-REPOSITORY",
+    "branch": "main"
+  },
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "logo_url": "/assets/favicon.png",
+  "display_url": "https://fortisinvicta.com",
+  "publish_mode": "simple",
+  "editor": {
+    "preview": false
+  },
+  "collections": [
+    {
+      "name": "settings",
+      "label": "Website settings",
+      "files": [
+        {
+          "name": "site",
+          "label": "Company & homepage",
+          "file": "content/site.json",
+          "fields": [
+            {
+              "name": "company",
+              "label": "Company",
+              "widget": "string"
+            },
+            {
+              "name": "tagline",
+              "label": "Tagline",
+              "widget": "string"
+            },
+            {
+              "name": "headline",
+              "label": "Headline",
+              "widget": "string"
+            },
+            {
+              "name": "introduction",
+              "label": "Introduction",
+              "widget": "text"
+            },
+            {
+              "name": "about",
+              "label": "About",
+              "widget": "text"
+            },
+            {
+              "name": "address",
+              "label": "Address",
+              "widget": "string"
+            },
+            {
+              "name": "email",
+              "label": "Email",
+              "widget": "string"
+            },
+            {
+              "name": "phone",
+              "label": "Phone",
+              "widget": "string"
+            },
+            {
+              "name": "whatsapp",
+              "label": "Whatsapp",
+              "widget": "string"
+            },
+            {
+              "name": "hours",
+              "label": "Hours",
+              "widget": "string"
+            },
+            {
+              "name": "platform",
+              "label": "Platform",
+              "widget": "string"
+            },
+            {
+              "name": "reviewedOn",
+              "label": "Content review date (YYYY-MM-DD)",
+              "widget": "string",
+              "pattern": [
+                "^\\d{4}-\\d{2}-\\d{2}$",
+                "Use YYYY-MM-DD"
+              ]
+            },
+            {
+              "name": "positioning",
+              "label": "Short positioning statement",
+              "widget": "string"
+            },
+            {
+              "name": "socialLinks",
+              "label": "Social media links",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Platform name",
+                  "widget": "string"
+                },
+                {
+                  "name": "url",
+                  "label": "Public HTTPS profile URL",
+                  "widget": "string",
+                  "pattern": [
+                    "^https://",
+                    "Use a public HTTPS link, not an admin dashboard"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "label": "Projects",
+      "files": [
+        {
+          "name": "projects",
+          "label": "Projects",
+          "file": "content/projects.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Projects",
+              "widget": "list",
+              "summary": "{{fields.title}} \u2014 {{fields.status}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Page address (lowercase words with hyphens)",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(-[a-z0-9]+)*$",
+                    "Use lowercase letters, digits and hyphens"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "status",
+                  "label": "Visibility",
+                  "widget": "select",
+                  "options": [
+                    "draft",
+                    "published",
+                    "archived"
+                  ],
+                  "default": "draft"
+                },
+                {
+                  "name": "category",
+                  "label": "Business category",
+                  "widget": "string"
+                },
+                {
+                  "name": "stage",
+                  "label": "Development stage",
+                  "widget": "string"
+                },
+                {
+                  "name": "summary",
+                  "label": "Short summary",
+                  "widget": "text"
+                },
+                {
+                  "name": "description",
+                  "label": "Description (plain text)",
+                  "widget": "text"
+                },
+                {
+                  "name": "nextStep",
+                  "label": "Next milestone",
+                  "widget": "text"
+                },
+                {
+                  "name": "needs",
+                  "label": "Collaboration needs",
+                  "widget": "text"
+                },
+                {
+                  "name": "lastReviewed",
+                  "label": "Project content reviewed (YYYY-MM-DD)",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "events",
+      "label": "News & photo albums",
+      "files": [
+        {
+          "name": "events",
+          "label": "News & photo albums",
+          "file": "content/events.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "News & photo albums",
+              "widget": "list",
+              "summary": "{{fields.title}} \u2014 {{fields.status}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Page address (lowercase words with hyphens)",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(-[a-z0-9]+)*$",
+                    "Use lowercase letters, digits and hyphens"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "status",
+                  "label": "Visibility",
+                  "widget": "select",
+                  "options": [
+                    "draft",
+                    "published",
+                    "archived"
+                  ],
+                  "default": "draft"
+                },
+                {
+                  "name": "date",
+                  "label": "Event/update date",
+                  "widget": "datetime",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD"
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "select",
+                  "options": [
+                    "Event",
+                    "Project update",
+                    "Training",
+                    "Company news",
+                    "Field notes"
+                  ]
+                },
+                {
+                  "name": "location",
+                  "label": "Location",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "summary",
+                  "label": "Summary",
+                  "widget": "text"
+                },
+                {
+                  "name": "body",
+                  "label": "Full update (plain text)",
+                  "widget": "text"
+                },
+                {
+                  "name": "project",
+                  "label": "Related project page address",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "cover",
+                  "label": "Cover photograph",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "max_file_size": 2097152
+                    }
+                  }
+                },
+                {
+                  "name": "coverAlt",
+                  "label": "Cover alternative text",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "photos",
+                  "label": "Photographs",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image",
+                      "media_library": {
+                        "config": {
+                          "max_file_size": 2097152
+                        }
+                      }
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alternative text (describe the image)",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "caption",
+                      "label": "Caption",
+                      "widget": "text",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "updatedOn",
+                  "label": "Last editorial update (YYYY-MM-DD)",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "documents",
+      "label": "Public documents",
+      "files": [
+        {
+          "name": "documents",
+          "label": "Public documents",
+          "file": "content/documents.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Public documents",
+              "widget": "list",
+              "summary": "{{fields.title}} \u2014 {{fields.status}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Page address (lowercase words with hyphens)",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(-[a-z0-9]+)*$",
+                    "Use lowercase letters, digits and hyphens"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "status",
+                  "label": "Visibility",
+                  "widget": "select",
+                  "options": [
+                    "draft",
+                    "published",
+                    "archived"
+                  ],
+                  "default": "draft"
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "string"
+                },
+                {
+                  "name": "date",
+                  "label": "Publication date",
+                  "widget": "datetime",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false,
+                  "format": "YYYY-MM-DD"
+                },
+                {
+                  "name": "version",
+                  "label": "Version",
+                  "widget": "string",
+                  "default": "1.0"
+                },
+                {
+                  "name": "summary",
+                  "label": "Summary",
+                  "widget": "text"
+                },
+                {
+                  "name": "file",
+                  "label": "Public PDF",
+                  "widget": "file",
+                  "media_library": {
+                    "config": {
+                      "max_file_size": 12582912
+                    }
+                  }
+                },
+                {
+                  "name": "event",
+                  "label": "Related event address (optional)",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "faqs",
+      "label": "Questions & answers",
+      "files": [
+        {
+          "name": "faqs",
+          "label": "Questions & answers",
+          "file": "content/faqs.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Questions",
+              "widget": "list",
+              "summary": "{{fields.title}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Unique reference",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Question",
+                  "widget": "string"
+                },
+                {
+                  "name": "answer",
+                  "label": "Answer (plain text)",
+                  "widget": "text"
+                },
+                {
+                  "name": "status",
+                  "label": "Visibility",
+                  "widget": "select",
+                  "options": [
+                    "draft",
+                    "published",
+                    "archived"
+                  ],
+                  "default": "draft"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
