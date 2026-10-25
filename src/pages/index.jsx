@@ -77,7 +77,7 @@ export default function Home() {
               <Link href="/contact" className="bg-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900">
                 Start Your Project
               </Link>
-              <Link href="https://wa.me/220999999?text=I%20am%20interested%20in%20FORTIS%20INVICTA%20services" className="border-2 border-navy text-navy px-8 py-3 rounded-lg font-semibold hover:bg-navy hover:text-white">
+              <Link href="https://wa.me/220872572911?text=I%20am%20interested%20in%20FORTIS%20INVICTA%20services" className="border-2 border-navy text-navy px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy inline-block text-center">
                 Chat on WhatsApp
               </Link>
             </div>
@@ -135,7 +135,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2">
                 <li>Kairaba Avenue, Banjul, The Gambia</li>
-                <li><a href="tel:+2209999999">+220 999 9999</a></li>
+                <li><a href="tel:+220872572911">+220 87 257 2911</a></li>
                 <li><a href="mailto:info@fortisinvicta.com">info@fortisinvicta.com</a></li>
               </ul>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-700 pt-8 text-center">
             <p>© 2026 FORTIS INVICTA LTD. All rights reserved. | Powering The Gambia's Future</p>
-            <a href="https://wa.me/220999999?text=Hello%20FORTIS%20INVICTA%2C%20I%20have%20an%20inquiry" className="mt-4 inline-block">
+            <a href="https://wa.me/220872572911?text=Hello%20FORTIS%20INVICTA%2C%20I%20have%20an%20inquiry" className="mt-4 inline-block">
               Chat with us on WhatsApp
             </a>
           </div>
